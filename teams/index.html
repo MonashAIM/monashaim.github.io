@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/dd78e3b176.js" crossorigin="anonymous"></script>
+  <title>Team Page</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-background"></div>
+    <ul class="navbar-items">
+      <li>
+        <a href="../">About Us</a>
+      </li>
+      <li>
+        <a href="../projects/index.html">Projects</a>
+      </li>
+      <li><a class="logo" href="../"><img src="../images/aim_logo_white.png" width="100px" height="auto"></a></li>
+      <li>
+        <a href="../teams/index.html">Our Team</a>
+      </li>
+      <li>
+        <a href="../recruitment/index.html">Join Us</a>
+      </li>
+    </ul>
+    <div class="navbar-items-mobile">
+      <a class="mobile-logo" href="../"><img src="../images/aim_logo_white.png" width="100px" height="auto"></a>
+      <div class="mobile-menu"><i class=" fas fa-bars fa-2x"></i></div>
+      <div id="mobile-nav-menu" class="mobile-menu-items-container">
+        <div class="mobile-menu-items-bg"></div>
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="../home/index.html">About Us</a>
+          </li>
+          <li>
+            <a href="../projects/index.html">Projects</a>
+          </li>
+          <li>
+            <a href="../teams/index.html">Our Team</a>
+          </li>
+          <li>
+            <a href="../recruitment/index.html">Join Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="banner-container">
+    <svg class="banner" width="100vw" height="100%">
+      <defs>
+        <filter id="blur">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+        </filter>
+        <pattern id="text-pattern" patternUnits="userSpaceOnUse" width="1970" height="84">
+          <text x="0" y="65" class="banner-text">
+            <tspan class="banner-text-1">M</tspan>ONASH <tspan class="banner-text-2">A</tspan>RTIFICIAL <tspan
+              class="banner-text-2">I</tspan>NTELLIGENCE <tspan class="banner-text-2">M</tspan>EDICAL IMAGING
+          </text>
+        </pattern>
+      </defs>
+      <g filter="url(#blur)">
+        <g transform="translate(-35,0)">
+          <rect width="110%" height="83" fill="url(#text-pattern)" />
+        </g>
+        <g transform="translate(-600, 0)">
+          <rect y="84" width="250%" height="83" fill="url(#text-pattern)" />
+        </g>
+        <g transform="translate(-300, 0)">
+          <rect y="168" width="200%" height="83" fill="url(#text-pattern)" />
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <div class="page-container">
+    <div class="page-title-container-outer">
+      <div class="page-title-container-lg">
+        <svg class="page-title-border-lg" width="360" height="90" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 2.5 10 L 2.5 60 M 0 10 L 60 10 M 357.6 80 L 357.6 30 M 360 80 L 307 80" stroke="white"
+            stroke-width="5" />
+        </svg>
+        <h1 class="page-title title">OUR TEAM</h1>
+      </div>
+
+      <div class="page-title-container-sm">
+        <svg class="page-title-border-sm" width="225" height="55" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 2 0 L 2 40 M 0 2 L 40 2 M 223 55 L 223 15 M 225 53 L 185 53" stroke="white" stroke-width="4" />
+        </svg>
+        <h1 class="page-title-sm">OUR TEAM</h1>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section">
+        <div class="section-info">
+          <h2>
+            Leadership
+          </h2>
+          <p>
+            The leadership team is structured to have two Leads for the organisation, one Lead for Development and one
+            Lead for Education and Marketing.
+          </p>
+        </div>
+        <div class="leadership-section-carousel carousel"></div>
+      </div>
+    </div>
+    <div class="section-container alt-bg">
+      <div class="section">
+        <div class="section-info">
+          <h2 class="alt-txt">
+            Development
+          </h2>
+          <p class="alt-txt">
+            The development team will focus on research into medical conditions and developing imaging models for those
+            conditions. The team is split into 2-3 groups which all focus on different projects, with one project per
+            semester.
+          </p>
+        </div>
+        <div class="development-section-carousel carousel"></div>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="section">
+        <div class="section-info">
+          <h2>
+            Education
+          </h2>
+          <p>
+            The education team onboards new members, which involves hosting workshops and refining our resources.
+          </p>
+        </div>
+        <div class="education-section-carousel carousel"></div>
+      </div>
+    </div>
+    <div class="section-container alt-bg">
+      <div class="section">
+        <div class="section-info">
+          <h2 class="alt-txt">
+            Marketing
+          </h2>
+          <p class="alt-txt">
+            The marketing team focuses on updating the website and other external materials. The marketing team also
+            leads event promotion and logistics, as well as recruitment.
+          </p>
+        </div>
+        <div class="marketing-section-carousel carousel"></div>
+      </div>
+    </div>
+    <footer>
+      <p>MONASH AIM © 2024. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="../navbar.js"></script>
+  <script src="carousel.js"></script>
+</body>
