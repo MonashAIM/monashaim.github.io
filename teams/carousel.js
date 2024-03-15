@@ -172,13 +172,9 @@ class Carousel {
 }
 
 const c1 = document.querySelector('.leadership-section-carousel');
-
 const c2 = document.querySelector('.development-section-carousel');
-
 const c3 = document.querySelector('.education-section-carousel');
-
 const c4 = document.querySelector('.marketing-section-carousel');
-
 
 const leadershipCarousel = new Carousel(c1, 1);
 const developmentCarousel = new Carousel(c2, 2);
@@ -190,5 +186,3 @@ developmentCarousel.mounted();
 educationCarousel.mounted();
 marketingCarousel.mounted();
 
-
-console.log('shit')
