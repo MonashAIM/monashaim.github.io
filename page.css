@@ -1,0 +1,68 @@
+@import "./navbar.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+
+body {
+  height: 100%;
+  background-image: linear-gradient(120deg, #494582, #1E5587, rgba(8, 94, 138, 0.8));
+}
+
+
+/* page container */
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: clip;
+}
+
+/* TODO: Page-Title needs to be merged into this file. */
+
+/* banner css */
+.banner-container {
+  height: 270px;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+}
+
+.banner-text {
+  font-size: 80px;
+  font-weight: bold;
+  fill: white;
+}
+
+.banner-text-1 {
+  fill: #9A98E9;
+}
+
+.banner-text-2 {
+  fill: #FF9696;
+}
+
+.banner-row1 {
+  width: 100%;
+}
+
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+footer p {
+  text-align: center;
+}
+

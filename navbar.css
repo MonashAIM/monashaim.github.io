@@ -1,0 +1,135 @@
+/* Navigation Bar */
+  .navbar {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    justify-content: center;
+    border-bottom: 2px solid #2E2E30;
+    position: sticky;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 20%;
+    z-index: -1;
+    background-color: #2E2E30;
+  }
+
+  .navbar-items {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: right;
+    justify-content: space-evenly;
+    max-width: 1280px;
+  }
+
+  .navbar-items li {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .navbar-items li a {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+
+    transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  }
+
+  .navbar-items li a:not(.logo):hover {
+    color: #2E2E30;
+    background-color: white;
+  }
+
+
+/* Navigation Bar for mobile */
+  .mobile-menu-items-container {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 20;
+    width: 100vw;
+    height: calc(100vh - 100px);
+  }
+
+  .mobile-menu-items-bg {
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: #2E2E30;
+    z-index: -1;
+    opacity: 90%
+  }
+
+  .navbar-items-mobile {
+    display: none;
+  }
+
+  .mobile-menu-items {
+    list-style: none;
+    display: block;
+    margin: 0;
+    backdrop-filter: blur(10px);
+  }
+
+  .mobile-menu-items li {
+    margin: 10px 0;
+    width: 100vw;
+  }
+
+  .mobile-menu-items li a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    font-weight: bold;
+    color: white;
+  }
+
+@media (max-width: 600px) {
+  .navbar-background {
+    opacity: 80%;
+  }
+
+  .navbar-items {
+    display: none;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .navbar-items-mobile {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
