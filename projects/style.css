@@ -222,8 +222,10 @@ body {
 }
 
 footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
