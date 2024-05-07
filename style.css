@@ -100,13 +100,12 @@ body {
   background-position: 0% 0%;
 }
 ::-webkit-scrollbar {
-  width: 10px; /* adjust the width of the scrollbar */
+  width: 13px; /* adjust the width of the scrollbar */
 }
 
 /* Styling the track (part the thumb slides within) */
 ::-webkit-scrollbar-track {
-  background: rgba(255, 219, 219, 0.2); /* semi-transparent black for subtle visibility */
-  border-radius: 10px; /* rounded corners for the track */
+  background: rgb(164, 158, 158); /* semi-transparent black for subtle visibility */
 }
 
 /* Styling the thumb (the part that's draggable) */
