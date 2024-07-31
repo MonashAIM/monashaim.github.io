@@ -113,8 +113,18 @@
   margin-bottom: 10%;
 }
 
+.recruitment-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruitment-button-spacer {
+  width: 10vh;
+}
+
 .recruitment-button {
-  margin-top: 80px;
+  margin-top: 60px;
   padding: 15px 30px 15px 30px;
   background-color: #2E2E30;
   font-weight: bold;
