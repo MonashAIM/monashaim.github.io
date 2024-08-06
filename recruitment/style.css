@@ -200,10 +200,14 @@
   align-content: center;
 }
 
+.fa-sitemap,
 .fa-camera,
+.fa-palette,
+.fa-user-friends,
 .fa-book,
-.fa-terminal,
-.fa-sitemap {
+.fa-hand-holding-medical,
+.fa-hands-helping,
+.fa-terminal {
   color: #2E2E30;
 }
 
