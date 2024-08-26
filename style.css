@@ -99,6 +99,27 @@ body {
   animation: myAnim 5s ease 0s 1 normal none;
   background-position: 0% 0%;
 }
+::-webkit-scrollbar {
+  width: 13px; /* adjust the width of the scrollbar */
+}
+
+/* Styling the track (part the thumb slides within) */
+::-webkit-scrollbar-track {
+  background: rgb(164, 158, 158); /* semi-transparent black for subtle visibility */
+}
+
+/* Styling the thumb (the part that's draggable) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(30, 85, 135, 0.8); /* semi-transparent blue for the thumb */
+  border-radius: 5px; /* fully round edges for the thumb */
+  border: 2px solid transparent; /* ensures no extra border visible */
+  background-clip: content-box; /* prevents border from taking color */
+}
+
+/* Optional: styling for hover state of the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(8, 94, 138, 0.9); /* slightly darker blue when hovering */
+}
 
 @keyframes myAnim {
   0% {
