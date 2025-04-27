@@ -29,16 +29,16 @@
   }
   
   .navbar-items li:first-child {
-    margin-left: 60px;
+    margin-left: 4vw;
     margin-right: auto;
   }
   
   .navbar-items li:not(:first-child) {
-    margin-left: 30px; 
+    margin-left: 2vw; 
   }
 
   .navbar-items li:last-child {
-    margin-right: 60px;
+    margin-right: 4vw;
   }
 
   .navbar-items li {
