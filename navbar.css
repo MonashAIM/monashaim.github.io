@@ -20,6 +20,28 @@
     background-color: #2E2E30;
   }
 
+  /* publications navbar */
+  .navbar-pubs {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border-bottom: 1px solid #396e7d;
+    position: sticky;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar-pubs-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 90%;
+    z-index: -1;
+    background-image: linear-gradient(90deg, #1c498b, #396e7d, #6bae50);
+  }
+
   .navbar-items {
     width: 100%;
     list-style: none;
