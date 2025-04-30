@@ -86,7 +86,7 @@ body {
 
 /* Background Image (about us page) */
 #stars {
-  background-image: url('images/abstract-background.jpg');
+  background-image: url('images/abstract-background-swapped-muted.jpg');
   background-size: cover;
   background-position: center;
   color: white;
