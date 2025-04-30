@@ -1,0 +1,160 @@
+@import "../page.css";
+
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: none !important;
+  background-color: #f9f9f9 !important;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* PUBLICATIONS CONTAINER */
+.publications-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.publications-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+/* SEARCH BAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.search-bar input {
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #003865;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #005799;
+}
+
+/* SORT DROPDOWN */
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-dropdown select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* VIEW TOGGLE */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-toggle button {
+  background: #eee;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.view-toggle button:hover {
+  background-color: #ddd;
+}
+
+/* PUBLICATION GRID */
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #003865;
+}
+
+.publications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* PUBLICATION CARD */
+.publication-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.publication-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.card-image {
+  background-color: #f0f0f0;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #aaa;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+}
+
+.card-meta {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, #1c498b, #396e7d, #6bae50);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+  width: 100%;
+  padding: 1rem;
+}
